@@ -1,17 +1,17 @@
 var menu = {
-    "Caffe Americano":{price: 3.99,image:"starbuck/americano.jpg"},
-    "Caffe Latte":{price: 4.599, image:"starbuck/Cafe-latte.jpg"},
-    "Cappuchino":{price: 3.99, image:"starbuck/cappuchino.jpg"},
-    "Espresso":{price: 2.99,image:"starbuck/esspresso.jpg"},
-    "Mocha":{price: 4.79, image:"starbuck/mocha.jpg"},
-    "white chocolate mocha":{price:4.99,image:"starbuck/white chocolate mattcha.jpg"},
-    "Caramel Macchiato":{price:4.79,image:"starbuck/caramel macchiato starbuck.jpg"},
-    "java chip frappuchunino":{price:5.49,image:"starbuck/java chip frappuccino.jpg"},
-    "green tea frappuchino":{price :4.99,image:"starbuck/green tea cream frappuccino.jpg"},
-    "Chai tea latte":{price:3.99,image:"starbuck/chai tea latte starbucks.jpg"},
+    "Caffe Americano":{price: 3.99,image:"../starbuck/americano.jpg"},
+    "Caffe Latte":{price: 4.599, image:"../starbuck/Cafe-latte.jpg"},
+    "Cappuchino":{price: 3.99, image:"../starbuck/cappuchino.jpg"},
+    "Espresso":{price: 2.99,image:"../starbuck/esspresso.jpg"},
+    "Mocha":{price: 4.79, image:"../starbuck/mocha.jpg"},
+    "white chocolate mocha":{price:4.99,image:"../starbuck/white chocolate mattcha.jpg"},
+    "Caramel Macchiato":{price:4.79,image:"../starbuck/caramel macchiato starbucks.jpg"},
+    "java chip frappuchunino":{price:5.49,image:"../starbuck/java chip frappuccino.jpg"},
+    "green tea frappuchino":{price :4.99,image:"../starbuck/green tea cream frappuccino.jpg"},
+    "Chai tea latte":{price:3.99,image:"../starbuck/chai tea latte starbucks.jpg"},
 };
 function createDrinkMenu(){
-    var menuContainer =document.getElementById("menu-containet");
+    var menuContainer =document.getElementById("menu-container");
     var menuList=document.createElement("ul");
     for(var drink in menu){
         var price =menu[drink].price.toFixed(2);
